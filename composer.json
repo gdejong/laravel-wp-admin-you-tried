@@ -1,12 +1,12 @@
 {
-    "name": "gdejong/LaravelWPAdminYouTried",
+    "name": "gdejong/laravel-wp-admin-you-tried",
     "type": "library",
     "description": "Bait for any configured login page.",
     "keywords": [
         "gdejong",
         "LaravelWPAdminYouTried"
     ],
-    "homepage": "https://github.com/gdejong/LaravelWPAdminYouTried",
+    "homepage": "https://github.com/gdejong/laravel-wp-admin-you-tried",
     "license": "MIT",
     "authors": [
         {
