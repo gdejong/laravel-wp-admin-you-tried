@@ -2,7 +2,7 @@
 
 return [
     /**
-     * All the routes you want to 'mock'
+     * All the routes you want to 'mock'.
      */
     'login-endpoints' => [
         '/wp-admin',
@@ -21,5 +21,10 @@ return [
      * to this URL after submitting the form. Fully qualified URL.
      * I am not linked to this example, I just found it funny.
      */
-    'redirect_url' => 'http://endless.horse/'
+    'redirect_url' => 'http://endless.horse/',
+
+    /**
+     * How many seconds to wait before redirecting the user.
+     */
+    'redirect_sleep' => 0,
 ];

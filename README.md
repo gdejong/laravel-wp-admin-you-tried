@@ -8,6 +8,7 @@ Configuration options:
 - `login-endpoints` an array containing the endpoints to mock.
 - `action` what to do after submitting the form, currently only supports `redirect`
 - `redirect_url` where to redirect the user to after submitting the login form
+- `redirect_sleep` how many seconds to wait before redirecting
 
 ## Install
 

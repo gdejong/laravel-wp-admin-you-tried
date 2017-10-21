@@ -13,13 +13,10 @@ class LaravelWPAdminYouTriedServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Load routes
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
-
         // Publish config.
         $this->publishes([
             __DIR__.'/../config/wp-admin-you-tried.php' => config_path('wp-admin-you-tried.php'),
-        ]);
+        ], 'config');
 
         // Publish assets.
         $this->publishes([
@@ -28,6 +25,9 @@ class LaravelWPAdminYouTriedServiceProvider extends ServiceProvider
 
         // Load views.
         $this->loadViewsFrom(__DIR__ . '/../views', 'gdejong');
+
+        // Load routes
+        $this->loadRoutesFrom(__DIR__ . '/routes.php');
     }
 
     /**
