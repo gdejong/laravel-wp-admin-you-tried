@@ -7,7 +7,17 @@ Quick Laravel package to give something back to all the automated web scrapers t
 Via Composer
 
 ``` bash
-$ composer require gdejong/LaravelWPAdminYouTried
+$ composer require gdejong/LaravelWPAdminYouTried:dev-master
+```
+
+Add Service Provider to `config\app.php`
+``` bash
+\gdejong\LaravelWPAdminYouTried\LaravelWPAdminYouTriedServiceProvider::class,
+```
+
+Publish vendor files
+``` bash
+$ php artisan vendor:publish
 ```
 
 ## Contributing

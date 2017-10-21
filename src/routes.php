@@ -7,16 +7,18 @@
 |
 */
 
-if(is_array(config('wp-admin-you-tried.login-endpoints'))) {
-     foreach (config('wp-admin-you-tried.login-endpoints') as $endpoint) {
-        Route::get($endpoint, function () {
-            return view('gdejong::index');
-        });
+$loginEndpoints = config('wp-admin-you-tried.login-endpoints', []);
+$action = config('wp-admin-you-tried.action', 'redirect');
+$redirectURL = config('wp-admin-you-tried.redirect_url', 'http://endless.horse/');
 
-        if (config('wp-admin-you-tried.action') === 'redirect') {
-            Route::post($endpoint, function () {
-                return redirect()->to(config('wp-admin-you-tried.redirect_url'));
-            });
-        }
-    }   
+foreach ($loginEndpoints as $endpoint) {
+    Route::get($endpoint, function () {
+        return view('gdejong::index');
+    });
+
+    if ($action === 'redirect') {
+        Route::post($endpoint, function () use ($redirectURL) {
+            return redirect()->to($redirectURL);
+        });
+    }
 }
