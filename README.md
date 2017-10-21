@@ -7,7 +7,7 @@ Quick Laravel package to give something back to all the automated web scrapers t
 Via Composer
 
 ``` bash
-$ composer require gdejong/LaravelWPAdminYouTried:dev-master
+$ composer require gdejong/laravel-wp-admin-you-tried:dev-master
 ```
 
 Add Service Provider to `config\app.php`
