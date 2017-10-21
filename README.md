@@ -40,4 +40,4 @@ Via Pull Requests.
 
 ## License
 
-The Unlicense. Please see [License File](LICENSE.md) for more information.
+The Unlicense. Please see [License File](LICENSE) for more information.
